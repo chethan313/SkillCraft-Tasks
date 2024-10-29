@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2c2925;
+    color: white;
+}
+
+.app-container {
+    text-align: center;
+    background-color: #885945;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"], input[type="datetime-local"] {
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3b3c4f;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.task.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task button {
+    margin-left: 5px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.task button.edit {
+    background-color: #f0ad4e;
+}
